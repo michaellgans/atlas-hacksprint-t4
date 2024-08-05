@@ -1,0 +1,6 @@
+-authentication instuctions
+-detailed info of every endpoint, operation, and resource
+-examples
+    -common requests
+    -responses
+-terms of use

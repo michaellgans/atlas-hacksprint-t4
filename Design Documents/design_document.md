@@ -14,3 +14,18 @@ Your SDD includes:
 - User Interface Design
 - Error Handling and Recovery
 - Dependencies
+
+
+
+another breakdown template
+-Title & People
+-Overview
+-context
+-goals annd non goals
+-milestones
+-solutions
+    -existing
+    -proposed
+    -alternative
+-testability, monitoring, alerting
+-detailed scoping annd timeline
