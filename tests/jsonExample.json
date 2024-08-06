@@ -1,0 +1,34 @@
+[
+    {
+        "pokemon": [
+            {
+                "pokeId": "1",
+                "pokeName": "bulbasaur",
+                "pokeType1": "type1",
+                "pokeType2": "type2",
+                "pokeSprite": "link.png"
+            },
+            {
+                "pokeId": "2",
+                "pokeName": "ivysaur",
+                "pokeType1": "type1",
+                "pokeType2": "type2",
+                "pokeSprite": "link.png"
+            }
+        ]
+    },
+    {
+        "types": [
+            {
+                "typeName": "normal",
+                "pokeList": ["pokeList"],
+                "doubleTo": ["type1", "type2"],
+                "doubleFrom": ["type1", "type2"],
+                "halfTo": ["type1", "type2"],
+                "halfFrom": ["type1", "type2"],
+                "zeroTo": ["type1", "type2"],
+                "zeroFrom": ["type1", "type2"]
+            }
+        ]
+    }
+]
