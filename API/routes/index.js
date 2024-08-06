@@ -1,0 +1,1 @@
+// Links functions to endpoints

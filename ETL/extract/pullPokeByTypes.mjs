@@ -17,11 +17,20 @@ async function getPokemonType(pokeType) {
         if (!response.ok) {
             throw err;
         }
+
         // Parse data into a JSON
         const data = await response.json();
+
         // For each Pokemon, print the name.
         const pokemonNames = data.pokemon.map(p => p.pokemon.name);
         console.log(`${pokeType} Pokemon:`, pokemonNames);
+
+        // Damage Relationships
+        const { damage_relations } = data;
+
+        // Super Effective!
+        const doubleFrom = damage_relations.double_damage_from.map(p => p.name);
+        console.log(`${pokeType} takes double damage from:`, doubleFrom);
     } catch (err) {
         console.error(err);
     }
