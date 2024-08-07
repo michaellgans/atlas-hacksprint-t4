@@ -8,7 +8,7 @@ async function pullDataFromAPIById(id) {
     const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`);
 
     if (!response.ok) {
-        throw err;
+        throw new Error;
     }
 
     const data = await response.json();
