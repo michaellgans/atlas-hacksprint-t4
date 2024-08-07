@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "## Collection Prototype ![image](https://github.com/user-attachments/assets/c46eb8cb-24b3-43e5-bf62-9f3d9b564111)",
   "main": "index.js",
+  "type": "module",
   "directories": {
     "test": "tests"
   },
@@ -10,5 +11,14 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "babel": "^5.8.38",
+    "express": "^4.19.2",
+    "fetch": "^1.1.0",
+    "mongodb": "^6.8.0",
+    "mongoose": "^8.5.2",
+    "node-fetch": "^3.3.2",
+    "nodemon": "^3.1.4"
+  }
 }
