@@ -13,9 +13,23 @@ async function pullDataFromAPIById(id) {
 
     const data = await response.json();
 
+    const regexPokeId = /(\d{1,5})\W{1}$/;
+    const pokeForType = data.pokemon;
+    const pokeFilteredList = [];
+
+    pokeForType.forEach((pokemon) => {
+      const url = pokemon.pokemon.url;
+      const match = url.match(regexPokeId);
+      console.log(match);
+      const pokeId = parseInt(match[1]);
+      if (pokeId <= 151) {
+        pokeFilteredList.push(pokemon.pokemon.name);
+      }
+    })
+
     const typeObject = {
       name: data.name,
-      pokemonList: data.pokemon.map(pokemon => pokemon.pokemon.name),
+      pokemonList: pokeFilteredList,
       doubleTo: data.damage_relations.double_damage_to.map(calc => calc.name),
       doubleFrom: data.damage_relations.double_damage_from.map(calc => calc.name),
       halfTo: data.damage_relations.half_damage_to.map(calc => calc.name),
