@@ -1,22 +1,30 @@
 /* Styling for Types Screen */
 
 :root {
-    --bug-type: #ab2;
-    --dark-type: #754;
-    --dragon-type: #76e;
-    --electric-type: #fc3;
-    --fairy-type: #e9e;
-    --fighting-type: #b54;
-    --fire-type: #f42;
-    --flying-type: #89f;
-    --ghost-type: #66b;
-    --grass-type: #7c5;
-    --ground-type: #db5;
-    --ice-type: #6cf;
-    --normal-type: #aa9;
-    --poison-type: #a59;
-    --psychic-type: #f59;
-    --rock-type: #ba6;
-    --steel-type: #aab;
-    --water-type: #39f;    
+    --bug-type: #90C12C;
+    --dark-type: #5A5366;
+    --dragon-type: #0A6DC4;
+    --electric-type: #F3D23B;
+    --fairy-type: #EC8FE6;
+    --fighting-type: #CE4069;
+    --fire-type: #FF9C54;
+    --flying-type: #8FA8DD;
+    --ghost-type: #5269AC;
+    --grass-type: #63BB5B;
+    --ground-type: #D97746;
+    --ice-type: #74CEC0;
+    --normal-type: #9099A1;
+    --poison-type: #AB6AC8;
+    --psychic-type: #F97176;
+    --rock-type: #C7B78B;
+    --steel-type: #5A8EA1;
+    --water-type: #4D90D5;    
+}
+
+.test-image {
+    background-color: var(--bug-type);
+}
+
+.test-image img {
+    width: 100px;
 }
