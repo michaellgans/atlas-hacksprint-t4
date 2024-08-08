@@ -40,6 +40,7 @@
 - [Swagger UI](https://swagger.io/docs/open-source-tools/swagger-ui/usage/installation/)
 - [Swagger JS](https://www.npmjs.com/package/swagger-jsdoc)
 - [Swagger Tutorial](https://www.youtube.com/watch?v=S8kmHtQeflo&t=1111s)
+- [Pokemon Icons](https://archives.bulbagarden.net/wiki/Category:Type_icons)
 
 ### Authors
 - Chris Stephens <christopherraystephens@gmail.com> [LinkedIn](https://www.linkedin.com/in/c-r-stephens/)
