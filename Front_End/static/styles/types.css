@@ -1,0 +1,22 @@
+/* Styling for Types Screen */
+
+:root {
+    --bug-type: #ab2;
+    --dark-type: #754;
+    --dragon-type: #76e;
+    --electric-type: #fc3;
+    --fairy-type: #e9e;
+    --fighting-type: #b54;
+    --fire-type: #f42;
+    --flying-type: #89f;
+    --ghost-type: #66b;
+    --grass-type: #7c5;
+    --ground-type: #db5;
+    --ice-type: #6cf;
+    --normal-type: #aa9;
+    --poison-type: #a59;
+    --psychic-type: #f59;
+    --rock-type: #ba6;
+    --steel-type: #aab;
+    --water-type: #39f;    
+}
