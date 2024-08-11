@@ -11,7 +11,7 @@ const routes = (app) => {
   app.get('/types', TypeController.getTypes);
 
   // GET Pokemon By Name
-  // app.get('/pokemon/:name', PokeController.getPokemonByName);
+  app.get('/pokemon/:name', PokeController.getPokemonByName);
 
   // GET Type By Name
   // app.get('/types/:name', TypeController.getTypeByName);

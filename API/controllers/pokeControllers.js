@@ -12,6 +12,11 @@ class PokeController {
 
   static async getPokemonByName(req, res) {
     // Retrieves Pokemon Object by Name
+    const name = req.params.name;
+    const pokemon = await Pokemon.findOne({ pokeName: `${name}` });
+    console.log(pokemon);
+    console.log(name);
+    res.status(200).send(pokemon);
   }
 }
 
