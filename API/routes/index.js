@@ -8,7 +8,7 @@ const routes = (app) => {
   app.get('/pokemon', PokeController.getPokemon);
 
   // GET All Types (w/ Pagination)
-  // app.get('/types', TypeController.getTypes);
+  app.get('/types', TypeController.getTypes);
 
   // GET Pokemon By Name
   // app.get('/pokemon/:name', PokeController.getPokemonByName);

@@ -7,6 +7,8 @@ class TypeController {
   // Route Methods for Accessing Type Data
   static async getTypes(req, res) {
     // Retrieves All Type Objects
+    const types = await Type.find();
+    res.status(200).send(types);
   }
 
   static async getTypeByName(req, res) {
