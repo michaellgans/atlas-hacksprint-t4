@@ -14,10 +14,10 @@ const routes = (app) => {
   app.get('/pokemon/:name', PokeController.getPokemonByName);
 
   // GET Type By Name
-  // app.get('/types/:name', TypeController.getTypeByName);
+  app.get('/types/:name', TypeController.getTypeByName);
 
   // GET Pokemon By Type (w/ Pagination)
-  // app.get('/pokemon/:type', TypeController.getPokemonByType);
+  app.get('/:type/pokemon', TypeController.getPokemonByType);
 
   // GET API Docs (Swagger)
   // app.get('/api-docs', () => {});

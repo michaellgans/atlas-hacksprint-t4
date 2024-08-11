@@ -13,10 +13,17 @@ class TypeController {
 
   static async getTypeByName(req, res) {
     // Retrieves Type Object by Name
+    const name = req.params.name;
+    const type = await Type.findOne({ name: `${name}` });
+    res.status(200).send(type);
   }
 
   static async getPokemonByType(req, res) {
     // Retrieves All Pokemon Objects of a Type
+    const type = req.params.type;
+    const pokeType = await Type.findOne({ name: `${type}` });
+    const pokemonArray = await Pokemon.find({ pokeName: { $in: pokeType.pokemonList } });
+    res.status(200).send(pokemonArray);
   }
 }
 
