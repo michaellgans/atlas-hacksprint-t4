@@ -1,0 +1,29 @@
+/* Styling for Single Type Screen */
+
+:root {
+    --bug-type: #90C12C;
+    --dark-type: #5A5366;
+    --dragon-type: #0A6DC4;
+    --electric-type: #F3D23B;
+    --fairy-type: #EC8FE6;
+    --fighting-type: #CE4069;
+    --fire-type: #FF9C54;
+    --flying-type: #8FA8DD;
+    --ghost-type: #5269AC;
+    --grass-type: #63BB5B;
+    --ground-type: #D97746;
+    --ice-type: #74CEC0;
+    --normal-type: #9099A1;
+    --poison-type: #AB6AC8;
+    --psychic-type: #F97176;
+    --rock-type: #C7B78B;
+    --steel-type: #5A8EA1;
+    --water-type: #4D90D5;
+    --pokeball-red: #ED533A;
+    --icon-color: #424242; 
+}
+
+body {
+    height: 100vh;
+    background-color: lightgray;
+}
