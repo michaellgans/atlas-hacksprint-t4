@@ -9,6 +9,4 @@ $(document).ready(function() {
         const url = `http://localhost:5500/Front_End/static/pages/single-type.html?type=${get_type}`;
         window.location.href = url;
     });
-
-    
 });

@@ -21,8 +21,8 @@ $(document).ready(function() {
     $("#type-icon").attr("src", `../images/${upperType}_icon_SwSh.png`);
 
     /* Change Background */
-    $("#gradient").css({"background": `linear-gradient(180deg, var(--${type}-type-65) 0%, rgba(255, 255, 255, 0.39) 100%)`})
+    $("#gradient").css({"background": `linear-gradient(180deg, var(--${type}-type-65) 0%, rgba(255, 255, 255, 0.39) 100%)`});
 
     /* Change Underline */
-    
+    $("h3").css({"border-bottom": `solid 7px var(--${type}-type-65)`});
 });
