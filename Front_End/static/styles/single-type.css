@@ -20,7 +20,25 @@
     --steel-type: #5A8EA1;
     --water-type: #4D90D5;
     --pokeball-red: #ED533A;
-    --icon-color: #424242; 
+    --icon-color: #424242;
+    --bug-type-65: rgba(144, 193, 44, 0.65);
+    --dark-type-65: rgba(90, 83, 102, 0.65);
+    --dragon-type-65: rgba(10, 109, 196, 0.65);
+    --electric-type-65: rgba(243, 210, 59, 0.65);
+    --fairy-type-65: rgba(236, 143, 230, 0.65);
+    --fighting-type-65: rgba(206, 64, 105, 0.65);
+    --fire-type-65: rgba(255, 156, 84, 0.65);
+    --flying-type-65: rgba(143, 168, 221, 0.65);
+    --ghost-type-65: rgba(82, 105, 172, 0.65);
+    --grass-type-65: rgba(99, 187, 91, 0.65);
+    --ground-type-65: rgba(217, 119, 70, 0.65);
+    --ice-type-65: rgba(116, 206, 192, 0.65);
+    --normal-type-65: rgba(144, 153, 161, 0.65);
+    --poison-type-65: rgba(171, 106, 200, 0.65);
+    --psychic-type-65: rgba(249, 113, 118, 0.65);
+    --rock-type-65: rgba(199, 183, 139, 0.65);
+    --steel-type-65: rgba(90, 142, 161, 0.65);
+    --water-type-65: rgba(77, 144, 213, 0.65);
 }
 
 @font-face {
@@ -35,7 +53,7 @@
 
 body {
     height: 100vh;
-    background: linear-gradient(180deg, rgba(243, 210, 59, 0.65) 0%, rgba(255, 255, 255, 0.39) 100%);
+    background: linear-gradient(180deg, var(--electric-type-65) 0%, rgba(255, 255, 255, 0.39) 100%);
 }
 
 /* App Styling */
@@ -65,10 +83,12 @@ h1 {
 h3 {
     font-size: 17px;
     font-family: poke-text;
-    padding-top: 6px;
-    padding-bottom: 6px;
+    border-bottom: solid 7px var(--electric-type-65);
+    display: inline;
 }
 
 .types img {
     width: 4.5rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
