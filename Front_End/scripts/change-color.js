@@ -13,14 +13,15 @@ $(document).ready(function() {
     const regex = /([^-]*){1}-/;
     const match = type.match(regex);
     type = match[1];
-    type = capWordUtil(type, " ");
+    const upperType = capWordUtil(type, " ");
 
-    $("#type-name").text(type);
+    $("#type-name").text(upperType);
 
     /* Change Icon */
-    $("#type-icon").attr("src", `../images/${type}_icon_SwSh.png`);
+    $("#type-icon").attr("src", `../images/${upperType}_icon_SwSh.png`);
 
     /* Change Background */
+    $("#gradient").css({"background": `linear-gradient(180deg, var(--${type}-type-65) 0%, rgba(255, 255, 255, 0.39) 100%)`})
 
     /* Change Underline */
     
