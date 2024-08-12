@@ -18,6 +18,7 @@ $(document).ready(function() {
     $("#type-name").text(type);
 
     /* Change Icon */
+    $("#type-icon").attr("src", `../images/${type}_icon_SwSh.png`);
 
     /* Change Background */
 
