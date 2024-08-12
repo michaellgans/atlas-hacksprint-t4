@@ -1,5 +1,7 @@
 // Retrieves applicable types based on single type displayed
 
+import capWordUtil from "../../Utils/Helper_Functions/capWordUtil.js";
+
 $(document).ready(function() {
     const params = new URLSearchParams(window.location.search);
     let type = params.get('type');
@@ -9,7 +11,6 @@ $(document).ready(function() {
     const regex = /([^-]*){1}-/;
     const match = type.match(regex);
     type = match[1];
-    // const upperType = capWordUtil(type, " ");
 
     // $("#type-name").text(upperType);
 
@@ -30,19 +31,23 @@ $(document).ready(function() {
             if (superEffectiveAgainst[0] === undefined) {
                 console.log(`${type} does double damage to nothing.`);
             } else {
-                $(".type-interaction-row").append(
-                    `<h3>Super Effective Against</h3>
-                    <div class="types">
-                        <a
-                            href="/index.html"
-                            aria-label="Click to view Fairy Type interactions.">
+                let interactionItem = `
+                    <h3>Super Effective Against</h3>
+                    <div class="types">`
+                for (let x = 0; x < superEffectiveAgainst.length; x++) {
+                    const upperType = capWordUtil(superEffectiveAgainst[x], " ");
+                    interactionItem += 
+                        `<a
+                            href="http://localhost:5500/Front_End/static/pages/single-type.html?type=${type}-type"
+                            aria-label="Click to view ${upperType} Type interactions.">
                             <img 
-                                src="../images/Fairy_icon_SwSh.png"
-                                alt="Fairy Type Icon"
+                                src="../images/${upperType}_icon_SwSh.png"
+                                alt="${upperType} Type Icon"
                             >
-                        </a>
-                    </div>
-                    `)
+                        </a>`
+                }
+                interactionItem += `</div>`
+                $(".type-interaction-row").append(interactionItem);
             }
 
             if (weakTo[0] === undefined) {
