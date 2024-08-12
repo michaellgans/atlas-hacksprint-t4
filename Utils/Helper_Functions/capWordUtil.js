@@ -1,6 +1,6 @@
 // Util function capitalize the first letter of each word in a string
 
-function capWordUtil(paintingTitle, delimiter) {
+export default function capWordUtil(paintingTitle, delimiter) {
     // Split the title of the painting by each word
     if (delimiter === " ") {
         paintingTitle = paintingTitle.split(" ");
@@ -22,5 +22,3 @@ function capWordUtil(paintingTitle, delimiter) {
         return paintingTitle.join(",");
     }
 };
-
-module.exports = capWordUtil;
