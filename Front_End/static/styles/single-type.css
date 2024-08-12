@@ -53,15 +53,15 @@
 
 body {
     height: 100vh;
-    background: linear-gradient(180deg, var(--electric-type-65) 0%, rgba(255, 255, 255, 0.39) 100%);
 }
 
 /* App Styling */
 
 .app-container {
+    z-index: -1;
     width: 430px;
     height: 932px;
-    border: 2px solid black;
+    background: linear-gradient(180deg, var(--electric-type-65) 0%, rgba(255, 255, 255, 0.39) 100%);
 }
 
 h1 {
