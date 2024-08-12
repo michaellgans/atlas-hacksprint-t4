@@ -1,0 +1,104 @@
+/* Styling for All Pokemon Listed Screen */
+
+:root {
+    --bug-type: #90C12C;
+    --dark-type: #5A5366;
+    --dragon-type: #0A6DC4;
+    --electric-type: #F3D23B;
+    --fairy-type: #EC8FE6;
+    --fighting-type: #CE4069;
+    --fire-type: #FF9C54;
+    --flying-type: #8FA8DD;
+    --ghost-type: #5269AC;
+    --grass-type: #63BB5B;
+    --ground-type: #D97746;
+    --ice-type: #74CEC0;
+    --normal-type: #9099A1;
+    --poison-type: #AB6AC8;
+    --psychic-type: #F97176;
+    --rock-type: #C7B78B;
+    --steel-type: #5A8EA1;
+    --water-type: #4D90D5;
+    --pokeball-red: #ED533A;
+    --icon-color: #424242;
+    --bug-type-65: rgba(144, 193, 44, 0.65);
+    --dark-type-65: rgba(90, 83, 102, 0.65);
+    --dragon-type-65: rgba(10, 109, 196, 0.65);
+    --electric-type-65: rgba(243, 210, 59, 0.65);
+    --fairy-type-65: rgba(236, 143, 230, 0.65);
+    --fighting-type-65: rgba(206, 64, 105, 0.65);
+    --fire-type-65: rgba(255, 156, 84, 0.65);
+    --flying-type-65: rgba(143, 168, 221, 0.65);
+    --ghost-type-65: rgba(82, 105, 172, 0.65);
+    --grass-type-65: rgba(99, 187, 91, 0.65);
+    --ground-type-65: rgba(217, 119, 70, 0.65);
+    --ice-type-65: rgba(116, 206, 192, 0.65);
+    --normal-type-65: rgba(144, 153, 161, 0.65);
+    --poison-type-65: rgba(171, 106, 200, 0.65);
+    --psychic-type-65: rgba(249, 113, 118, 0.65);
+    --rock-type-65: rgba(199, 183, 139, 0.65);
+    --steel-type-65: rgba(90, 142, 161, 0.65);
+    --water-type-65: rgba(77, 144, 213, 0.65);
+}
+
+@font-face {
+    font-family: 'poke-text';
+    src: url('../fonts/pokemon_classic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'poke-title';
+    src: url('../fonts/ketchum.otf') format('opentype');
+}
+
+body {
+    height: 100vh;
+}
+
+/* App Styling */
+
+.app-container {
+    z-index: -1;
+    width: 430px;
+    height: 932px;
+    background: linear-gradient(180deg, var(--electric-type-65) 0%, rgba(255, 255, 255, 0.39) 100%);
+}
+
+h1 {
+    font-size: 4.875rem;
+    line-height: 70px;
+}
+
+.pokemon-type-name {
+    font-family: poke-title;
+    border-bottom: solid 7px var(--electric-type-65);
+}
+
+.current-type-icon {
+    z-index: -1;
+    position: absolute;
+    width: 11rem;
+    top: -30px;
+    left: 275px;
+}
+
+h3 {
+    font-size: 17px;
+    font-family: poke-text;
+    border-bottom: solid 7px var(--electric-type-65);
+    display: inline;
+}
+
+.pokemon-list-container {
+    height: 40rem;
+    border: 2px solid red;
+}
+
+text {
+    font-family: poke-text;
+}
+
+text:hover {
+    color: var(--electric-type);
+    text-decoration: underline;
+}
