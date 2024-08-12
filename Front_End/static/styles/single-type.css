@@ -52,7 +52,7 @@
 }
 
 body {
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 /* App Styling */
@@ -72,6 +72,7 @@ h1 {
     font-family: poke-title;
 }
 
+/* TODO: Set a media width for the icon so that the left changes */
 .current-type-icon {
     z-index: -1;
     position: absolute;
