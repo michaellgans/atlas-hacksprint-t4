@@ -35,7 +35,7 @@
 
 body {
     height: 100vh;
-    background-color: lightgray;
+    background: linear-gradient(180deg, rgba(243, 210, 59, 0.65) 0%, rgba(255, 255, 255, 0.39) 100%);
 }
 
 /* App Styling */
@@ -46,15 +46,8 @@ body {
     border: 2px solid black;
 }
 
-header {
-    /* z-index: 1;
-    position: relative; */
-    border: 2px solid purple;
-}
-
 h1 {
-    border: 2px solid purple;
-    font-size: 3rem;
+    font-size: 4.875rem;
 }
 
 .pokemon-type-name {
@@ -64,12 +57,18 @@ h1 {
 .current-type-icon {
     z-index: -1;
     position: absolute;
-    width: 7rem;
-    margin-left: 127px;
-    top: 0;
-    border: 2px solid purple;
+    width: 11rem;
+    top: -30px;
+    left: 275px;
 }
 
-.icons {
+h3 {
+    font-size: 17px;
+    font-family: poke-text;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
 
+.types img {
+    width: 4.5rem;
 }
