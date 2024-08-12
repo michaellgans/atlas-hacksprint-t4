@@ -23,6 +23,16 @@
     --icon-color: #424242; 
 }
 
+@font-face {
+    font-family: 'poke-text';
+    src: url('../fonts/pokemon_classic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'poke-title';
+    src: url('../fonts/ketchum.otf') format('opentype');
+}
+
 body {
     height: 100vh;
     background-color: lightgray;
@@ -36,12 +46,28 @@ body {
     border: 2px solid black;
 }
 
-.pokemon-type-name {
+header {
+    /* z-index: 1;
+    position: relative; */
+    border: 2px solid purple;
+}
 
+h1 {
+    border: 2px solid purple;
+    font-size: 3rem;
+}
+
+.pokemon-type-name {
+    font-family: poke-title;
 }
 
 .current-type-icon {
-
+    z-index: -1;
+    position: absolute;
+    width: 7rem;
+    margin-left: 127px;
+    top: 0;
+    border: 2px solid purple;
 }
 
 .icons {
