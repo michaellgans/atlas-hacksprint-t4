@@ -67,11 +67,13 @@ body {
 }
 
 .types-row {
-    border: 2px solid purple;
     width: 100%;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
 }
 
 .types-row img {
-    width: 5.3125rem;
-    height: 5.3125rem;
+    width: 5.5rem;
+    padding-right: .25rem;
+    padding-left: .25rem;
 }
