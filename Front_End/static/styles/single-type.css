@@ -27,3 +27,23 @@ body {
     height: 100vh;
     background-color: lightgray;
 }
+
+/* App Styling */
+
+.app-container {
+    width: 430px;
+    height: 932px;
+    border: 2px solid black;
+}
+
+.pokemon-type-name {
+
+}
+
+.current-type-icon {
+
+}
+
+.icons {
+
+}
