@@ -134,6 +134,9 @@ $(document).ready(function() {
                     </div>
                     `)
             }
+
+            /* Change Underline Color after element is created*/
+            $("h3").css({"border-bottom": `solid 7px var(--${type}-type-65)`});
         },
         error: function() {
             console.log("Get Pokemon Error");

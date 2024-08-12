@@ -26,7 +26,7 @@
     --dragon-type-65: rgba(10, 109, 196, 0.65);
     --electric-type-65: rgba(243, 210, 59, 0.65);
     --fairy-type-65: rgba(236, 143, 230, 0.65);
-    --fighting-type-65: rgba(206, 64, 105, 0.6);
+    --fighting-type-65: rgba(206, 64, 105, 0.65);
     --fire-type-65: rgba(255, 156, 84, 0.65);
     --flying-type-65: rgba(143, 168, 221, 0.65);
     --ghost-type-65: rgba(82, 105, 172, 0.65);
@@ -84,6 +84,10 @@ h1 {
     width: 11rem;
     top: -22px;
     left: 275px;
+}
+
+.type-interaction-container {
+    height: 100%;
 }
 
 h3 {
