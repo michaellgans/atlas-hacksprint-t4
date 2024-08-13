@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 
 const pokemonSchema = new mongoose.Schema({
-  pokeId : Number,
+  _id : Number,
   pokeName: String,
   pokeType1: String,
   pokeType2: String,
