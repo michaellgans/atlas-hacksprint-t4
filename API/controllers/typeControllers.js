@@ -7,7 +7,12 @@ class TypeController {
   // Route Methods for Accessing Type Data
   static async getTypes(req, res) {
     // Retrieves All Type Objects
-    const types = await Type.find();
+    const { page = 1, limit = 10 } = req.query;
+    const pageData = pagination(page, limit);
+
+    const types = await Type.find()
+      .skip(pageData.skip)
+      .limit(pageData.limit);
     res.status(200).send(types);
   }
 
@@ -21,8 +26,14 @@ class TypeController {
   static async getPokemonByType(req, res) {
     // Retrieves All Pokemon Objects of a Type
     const type = req.params.type;
+    const { page = 1, limit = 10 } = req.query;
+
+    const pageData = pagination(page, limit);
+
     const pokeType = await Type.findOne({ name: `${type}` });
-    const pokemonArray = await Pokemon.find({ pokeName: { $in: pokeType.pokemonList } });
+    const pokemonArray = await Pokemon.find({ pokeName: { $in: pokeType.pokemonList } })
+      .skip(pageData.skip)
+      .limit(pageData.limit);
     res.status(200).send(pokemonArray);
   }
 }
