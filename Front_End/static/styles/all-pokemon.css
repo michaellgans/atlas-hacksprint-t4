@@ -51,10 +51,6 @@
     src: url('../fonts/ketchum.otf') format('opentype');
 }
 
-/* body {
-    height: 100vh;
-} */
-
 /* App Styling */
 
 .app-container {
@@ -101,23 +97,11 @@ h3 {
 }
 
 .pokemon-item {
-    padding-bottom: 30px;
-    padding-left: 60px;
+    padding-bottom: 5px;
 }
 
-/* MAY NEED TO CHANGE IF ALL SPRITES ARENT THE SAME SIZE */
-.pokemon-container {
-    width: 130px;
-    height: 67px;
-    z-index: 2;
-    position: absolute;
-    margin-left: -100px;
-}
-
-#pokemon-sprite {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+#pokeball-sprite {
+    width: 70px;
 }
 
 #pokemon-id {
