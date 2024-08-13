@@ -2,6 +2,7 @@
 import Type from '../../Utils/models/type.js';
 import Pokemon from '../../Utils/models/pokemon.js';
 import mongoose from 'mongoose';
+import pagination from '../../Utils/Helper_Functions/pagination.js';
 
 class TypeController {
   // Route Methods for Accessing Type Data
