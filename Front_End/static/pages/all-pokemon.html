@@ -65,10 +65,46 @@
                     src="../images/Bag_Poké_Ball_SV_Sprite.png"
                     alt="Open pokedex modal"
                     data-toggle="modal"
-                    data-target="#pokedex"
+                    data-target="#pokedex1"
                 >
                 <text id="pokemon-id">#001</text>
                 <text id="pokemon-name">Bulbasaur</text>
+                <!-- Modal -->
+                <div class="modal fade" id="pokedex1" tabindex="-1" role="dialog" aria-labelledby="Pokedex showing pokemon that was clicked on." aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body d-flex justify-content-center">
+                                <div class="pokedex-screen d-flex flex-column">
+                                    <div class="pokemon-name">Bulbasaur</div>
+                                    <div class="pokemon-id">#001</div>
+                                    <div class="pokemon-sprite">
+                                        <img
+                                            id="sprite"
+                                            src="../images/test-sprite.png"
+                                            alt="Picture of Bulbasaur"
+                                        >
+                                    </div>
+                                    <div class="types-container d-flex flex-row align-items-center">
+                                        <div class="type1">
+                                            <img
+                                                id=type1
+                                                src="../images/Poison_icon_SwSh.png"
+                                                alt="Poison Type Icon"
+                                            >
+                                        </div>
+                                        <div class="type2">
+                                            <img
+                                                id=type2
+                                                src="../images/Grass_icon_SwSh.png"
+                                                alt="Grass Type Icon"
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="pokemon-item d-flex flex-row align-items-center">
                 <img

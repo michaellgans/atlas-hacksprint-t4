@@ -120,3 +120,7 @@ text {
 text:hover {
     text-decoration: underline;
 }
+
+.modal-dialog-centered {
+    justify-content: center;
+}

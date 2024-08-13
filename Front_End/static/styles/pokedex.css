@@ -9,24 +9,22 @@
     font-family: poke-text;
     color: white;
     position: relative;
-    height: 377px;
-    width: 221px;
     background-image: url(../images/pokedex.png);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
 }
 
 .modal-content {
-    height: 377px;
-    width: 221px;
-    border-radius: 30px;
+    height: 550px;
     border: none;
+    background-color: transparent;
 }
 
 .pokedex-screen {
-    width: 160px;
+    width: 190px;
     margin-left: 25px;
-    margin-top: 70px;
+    margin-top: 135px;
 }
 
 .pokemon-name {
@@ -44,12 +42,13 @@
 }
 
 .types-container {
-    margin-top: -25px;
+    margin-top: -5px;
     justify-content: end;
-    margin-right: 15px;
+    margin-right: 9px;
     z-index: 2;
 }
 
 .types-container img {
-    width: 30px;
+    width: 45px;
+    padding: 4px;
 }
