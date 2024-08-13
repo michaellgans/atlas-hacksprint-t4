@@ -99,6 +99,10 @@ h3 {
 
 .types img {
     width: 4.5rem;
+    padding-bottom: 5px;
+}
+
+.types {
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
 }
