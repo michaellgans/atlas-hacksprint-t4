@@ -1,0 +1,54 @@
+/* Styles for Pokedex Modal */
+
+@font-face {
+    font-family: 'poke-text';
+    src: url('../fonts/pokemon_classic.ttf') format('truetype');
+}
+
+.modal-body {
+    font-family: poke-text;
+    position: relative;
+    height: 377px;
+    width: 221px;
+    background-image: url(../images/pokedex.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.modal-content {
+    height: 377px;
+    width: 221px;
+    border-radius: 30px;
+    border: none;
+}
+
+.pokedex-screen {
+    width: 160px;
+    margin-left: 25px;
+    margin-top: 70px;
+}
+
+.pokemon-name {
+    font-size: 16px;
+}
+
+.pokemon-id {
+    font-size: 16px;
+}
+
+.pokemon-sprite {
+    display: flex;
+    justify-content: center;
+    padding-right: 10px;
+}
+
+.types-container {
+    margin-top: -25px;
+    justify-content: end;
+    margin-right: 15px;
+    z-index: 2;
+}
+
+.types-container img {
+    width: 30px;
+}
