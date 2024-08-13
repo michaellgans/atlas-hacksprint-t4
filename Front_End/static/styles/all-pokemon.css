@@ -99,6 +99,5 @@ text {
 }
 
 text:hover {
-    color: var(--electric-type);
     text-decoration: underline;
 }
