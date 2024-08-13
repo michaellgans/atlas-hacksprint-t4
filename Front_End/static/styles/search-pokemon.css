@@ -78,9 +78,16 @@ h1 {
 .current-type-icon {
     z-index: 2;
     position: absolute;
-    width: 15.5rem;
+    width: 13.5rem;
     top: -70px;
     left: 260px;
+}
+
+@media screen and (min-width: 1920px) {
+    .current-type-icon {
+        left: 1015px;
+        top: -25px;
+    }
 }
 
 h3 {

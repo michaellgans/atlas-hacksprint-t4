@@ -82,6 +82,13 @@ h1 {
     left: 275px;
 }
 
+@media screen and (min-width: 1920px) {
+    .current-type-icon {
+        left: 1030px;
+        top: -25px;
+    }
+}
+
 h3 {
     font-size: 17px;
     font-family: poke-text;

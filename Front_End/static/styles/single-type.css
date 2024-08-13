@@ -51,10 +51,6 @@
     src: url('../fonts/ketchum.otf') format('opentype');
 }
 
-body {
-    /* height: 100vh; */
-}
-
 /* App Styling */
 
 .app-container {
@@ -84,6 +80,13 @@ h1 {
     width: 11rem;
     top: -22px;
     left: 275px;
+}
+
+@media screen and (min-width: 1920px) {
+    .current-type-icon {
+        left: 1030px;
+        top: -25px;
+    }
 }
 
 .type-interaction-container {
