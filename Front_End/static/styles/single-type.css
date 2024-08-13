@@ -51,6 +51,11 @@
     src: url('../fonts/ketchum.otf') format('opentype');
 }
 
+/* body {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../images/test-sprite.png);
+    background-position: top;
+} */
+
 /* App Styling */
 
 .app-container {
@@ -73,7 +78,6 @@ h1 {
     font-family: poke-title;
 }
 
-/* TODO: Set a media width for the icon so that the left changes */
 .current-type-icon {
     z-index: 2;
     position: absolute;
