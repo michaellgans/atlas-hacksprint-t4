@@ -52,10 +52,6 @@
     src: url('../fonts/ketchum.otf') format('opentype');
 }
 
-/* body {
-    height: 100vh;
-} */
-
 /* App Styling */
 
 .app-container {
@@ -116,34 +112,40 @@ h3 {
     padding-left: 60px;
 }
 
-/* MAY NEED TO CHANGE IF ALL SPRITES ARENT THE SAME SIZE */
-.pokemon-container {
-    width: 130px;
-    height: 67px;
-    z-index: 2;
-    position: absolute;
-    margin-left: -100px;
-}
-
-#pokemon-sprite {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-#pokemon-id {
-    margin-right: 10px;
-    font-size: 20px;
-}
-
-#pokemon-name {
-    font-size: 20px;
-}
-
 text {
     font-family: poke-text;
 }
 
 text:hover {
     text-decoration: underline;
+}
+
+/* FORM STYLING */
+
+.form-inline {
+    width: 19rem;
+}
+
+.input-group {
+    border-radius: 1.25rem;
+    background: var(--icon-color);
+}
+
+.input-group-prepend {
+    border-radius: 1.25rem;
+    background: var(--icon-color);
+}
+
+.input-group-text {
+    border-radius: 1.25rem;
+    background: var(--icon-color);
+    border: none;
+}
+
+.form-control {
+    font-family: poke-text;
+    height: auto;
+    background: var(--icon-color);
+    border: none;
+    border-radius: 1.25rem;
 }
