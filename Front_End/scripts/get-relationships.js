@@ -29,12 +29,12 @@ $(document).ready(function() {
             // const notEffectedBy = data.damage_relations.no_damage_from.map(p => p.name);
             
             // Gets damage relationship arrays
-            const superEffectiveAgainst = data.doubleTo.map(p => p.name);
-            const weakTo = data.doubleFrom.map(p => p.name);
-            const notEffectiveAgainst = data.halfTo.map(p => p.name);
-            const resistantTo = data.halfFrom.map(p => p.name);
-            const noEffectAgainst = data.zeroTo.map(p => p.name);
-            const notEffectedBy = data.zeroFrom.map(p => p.name);
+            const superEffectiveAgainst = data.doubleTo;
+            const weakTo = data.doubleFrom;
+            const notEffectiveAgainst = data.halfTo;
+            const resistantTo = data.halfFrom;
+            const noEffectAgainst = data.zeroTo;
+            const notEffectedBy = data.zeroFrom;
 
             if (superEffectiveAgainst[0] === undefined) {
                 console.log(`${type} does double damage to nothing.`);
