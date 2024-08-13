@@ -1,4 +1,5 @@
 import { promises as fs } from 'fs';
+import { isObjectIdOrHexString } from 'mongoose';
 import fetch from 'node-fetch';
 
 const pokemonObjectArray = [];
@@ -31,7 +32,7 @@ async function pullDataFromAPIById(id) {
     });
 
     const pokemonObject = {
-      pokeId: id,
+      _id: id,
       pokeName: data.name,
       pokeType1: types[0],
       pokeType2: types[1] ? types[1] : null,
