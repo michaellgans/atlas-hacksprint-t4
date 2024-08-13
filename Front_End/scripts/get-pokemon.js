@@ -12,6 +12,8 @@ $(document).ready(function() {
     let typeInput = match[1];
     // const upperType = capWordUtil(type, " ");
 
+    // http://localhost:5000/pokemon
+    // ENTRY POINT FOR US :)
     // Pull data from source
     function getPokemon(typeInput) {
         $.ajax({

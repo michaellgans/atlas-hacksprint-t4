@@ -16,17 +16,25 @@ $(document).ready(function() {
 
     $.ajax({
         // API Entry Point
-        url: `https://pokeapi.co/api/v2/type/${type}`,
+        // url: `https://pokeapi.co/api/v2/type/${type}`,
+        url: `http://localhost:5000/types/${type}`,
         method: "GET",
         dataType: "json",
         success: function(data) {
+            // const superEffectiveAgainst = data.damage_relations.double_damage_to.map(p => p.name);
+            // const weakTo = data.damage_relations.double_damage_from.map(p => p.name);
+            // const notEffectiveAgainst = data.damage_relations.half_damage_to.map(p => p.name);
+            // const resistantTo = data.damage_relations.half_damage_from.map(p => p.name);
+            // const noEffectAgainst = data.damage_relations.no_damage_to.map(p => p.name);
+            // const notEffectedBy = data.damage_relations.no_damage_from.map(p => p.name);
+            
             // Gets damage relationship arrays
-            const superEffectiveAgainst = data.damage_relations.double_damage_to.map(p => p.name);
-            const weakTo = data.damage_relations.double_damage_from.map(p => p.name);
-            const notEffectiveAgainst = data.damage_relations.half_damage_to.map(p => p.name);
-            const resistantTo = data.damage_relations.half_damage_from.map(p => p.name);
-            const noEffectAgainst = data.damage_relations.no_damage_to.map(p => p.name);
-            const notEffectedBy = data.damage_relations.no_damage_from.map(p => p.name);
+            const superEffectiveAgainst = data.doubleTo.map(p => p.name);
+            const weakTo = data.doubleFrom.map(p => p.name);
+            const notEffectiveAgainst = data.halfTo.map(p => p.name);
+            const resistantTo = data.halfFrom.map(p => p.name);
+            const noEffectAgainst = data.zeroTo.map(p => p.name);
+            const notEffectedBy = data.zeroFrom.map(p => p.name);
 
             if (superEffectiveAgainst[0] === undefined) {
                 console.log(`${type} does double damage to nothing.`);
