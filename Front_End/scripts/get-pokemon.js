@@ -21,6 +21,14 @@ $(document).ready(function() {
         const populateList = $(".pokemon-list-container");
         populateList.empty();
         getPokemonInfo(typeInput, pageNumber)
+
+        setTimeout(function() {
+            if (populateList.children().length === 0) {
+                pageNumber = 1;
+                getPokemonInfo(typeInput, pageNumber);
+                console.log("You ran out of pokemon :(");
+            }
+        }, 400);
     });
 
     // Pull pokemon ids and sprites
