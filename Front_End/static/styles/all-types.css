@@ -80,6 +80,14 @@ body {
     padding-left: .2rem;
 }
 
+.types-row img:hover {
+    opacity: .8;
+}
+
 .home-icon, .search-icon {
     width: 100%;
+}
+
+.home-icon:hover, .search-icon:hover {
+    opacity: .8;
 }
