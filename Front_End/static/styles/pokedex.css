@@ -28,27 +28,28 @@
 }
 
 .pokemon-name {
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .pokemon-id {
-    font-size: 16px;
+    font-size: 13px;
 }
 
 .pokemon-sprite {
     display: flex;
     justify-content: center;
     padding-right: 10px;
+    height: 40%;
 }
 
 .types-container {
-    margin-top: -5px;
+    margin-top: -41px;
     justify-content: end;
-    margin-right: 9px;
+    margin-right: 5px;
     z-index: 2;
 }
 
 .types-container img {
-    width: 45px;
+    width: 35px;
     padding: 4px;
 }
