@@ -12,13 +12,23 @@ $(document).ready(function() {
     const regex = /([^-]*){1}-/;
     const match = type.match(regex);
     let typeInput = match[1];
+    let pageNumber = 1;
+
+    // Listen for click
+    $("#see-more").on("click", function() {
+        console.log("see-more has been clicked");
+        pageNumber ++;
+        const populateList = $(".pokemon-list-container");
+        populateList.empty();
+        getPokemonInfo(typeInput, pageNumber)
+    });
 
     // Pull pokemon ids and sprites
-    function getPokemonInfo(typeInput) {
+    function getPokemonInfo(typeInput, pageNumber) {
         $.ajax({
             // API Entry Point
             // url: `https://pokeapi.co/api/v2/type/${typeInput}`,
-            url: `http://localhost:5000/${typeInput}/pokemon`,
+            url: `http://localhost:5000/${typeInput}/pokemon?page=${pageNumber}`,
             method: "GET",
             dataType: "json",
             success: function(data) {
