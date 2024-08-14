@@ -1,4 +1,4 @@
-/* Styling for Search Pokemon Screen */
+/* Styling for All Pokemon Listed Screen */
 
 :root {
     --bug-type: #90C12C;
@@ -69,6 +69,7 @@ h1 {
 .pokemon-type-name {
     font-family: poke-title;
     border-bottom: solid 7px var(--grey-wash);
+    padding-left: 10px;
 }
 
 .current-type-icon {
@@ -108,49 +109,36 @@ h3 {
 }
 
 .pokemon-item {
-    padding-bottom: 30px;
-    padding-left: 60px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+}
+
+#pokeball-sprite {
+    width: 70px;
+}
+
+#pokemon-id {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+#pokemon-name {
+    font-size: 20px;
 }
 
 text {
     font-family: poke-text;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
 text:hover {
     text-decoration: underline;
 }
 
-/* FORM STYLING */
-
-.form-inline {
-    width: 19rem;
+.modal-dialog-centered {
+    justify-content: center;
 }
 
-.input-group {
-    border-radius: 1.25rem;
-    background: var(--icon-color);
-}
-
-.input-group-prepend {
-    border-radius: 1.25rem;
-    background: var(--icon-color);
-}
-
-.input-group-text {
-    border-radius: 1.25rem;
-    background: var(--icon-color);
-    border: none;
-}
-
-.form-control {
-    font-family: poke-text;
-    height: auto;
-    background: var(--icon-color);
-    border: none;
-    border-radius: 1.25rem;
+a {
+    text-decoration: none;
+    color: inherit;
 }

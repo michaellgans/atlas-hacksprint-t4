@@ -1,4 +1,4 @@
-<!-- Search Pokemon Page -->
+<!-- See All Pokemon Page -->
  
 <!DOCTYPE html>
 <html lang="en">
@@ -35,10 +35,10 @@
     ></script>
 
     <!-- Scripts -->
-    <script src="../../scripts/search-pokemon.js" type="module"></script>
+    <script src="../../scripts/full-pokeList.js" type="module"></script>
 
     <!-- Style Sheets -->
-    <link rel="stylesheet" type="text/css" href="../styles/search-pokemon.css">
+    <link rel="stylesheet" type="text/css" href="../styles/full-pokeList.css">
     <link rel="stylesheet" type="text/css" href="../styles/pokedex.css">
 
 </head>
@@ -47,7 +47,7 @@
 <body class="d-flex justify-content-center align-items-center">
     <div id="gradient" class="app-container p-3 d-flex flex-column">
         <header class="pb-1 d-flex flex-row">
-            <h1 id="type-name" class="pokemon-type-name pt-4">Search Pokemon</h1>
+            <h1 id="type-name" class="pokemon-type-name pt-4">All Pokemon</h1>
             <img
                 id="type-icon"
                 class="current-type-icon"
@@ -55,38 +55,28 @@
                 alt="Pokeball Icon"
             >
         </header>
-        <div class="pokemon-results mt-3 d-flex flex-column align-items-center">
-            <form class="form-inline">
-                <div class="input-group">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text" id="search-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
-                            <path d="M24.9521 21.9808C26.6324 19.693 27.625 16.8687 27.625 13.8125C27.625 6.18407 21.4409 0 13.8125 0C6.18407 0 0 6.18407 0 13.8125C0 21.4409 6.18407 27.625 13.8125 27.625C16.8695 27.625 19.6945 26.6319 21.9826 24.9507L21.9808 24.9521C22.0434 25.0371 22.1132 25.1184 22.1902 25.1954L30.3724 33.3776C31.2023 34.2075 32.5477 34.2075 33.3776 33.3776C34.2075 32.5477 34.2075 31.2023 33.3776 30.3724L25.1954 22.1902C25.1184 22.1132 25.0371 22.0434 24.9521 21.9808ZM25.5 13.8125C25.5 20.2673 20.2673 25.5 13.8125 25.5C7.35767 25.5 2.125 20.2673 2.125 13.8125C2.125 7.35767 7.35767 2.125 13.8125 2.125C20.2673 2.125 25.5 7.35767 25.5 13.8125Z" fill="white"/>
-                            <path d="M0.485714 14.45C0.485714 13.8632 1.21965 13.3875 2.125 13.3875H25.075C25.9803 13.3875 26.7143 13.8632 26.7143 14.45C26.7143 15.0368 25.9803 15.5125 25.075 15.5125H2.125C1.21965 15.5125 0.485714 15.0368 0.485714 14.45Z" fill="white"/>
-                            <path d="M17.85 14.45C17.85 16.7972 15.9472 18.7 13.6 18.7C11.2528 18.7 9.35 16.7972 9.35 14.45C9.35 12.1028 11.2528 10.2 13.6 10.2C15.9472 10.2 17.85 12.1028 17.85 14.45Z" fill="white"/>
-                        </svg>
-                    </span>
-                  </div>
-                  <input type="text" class="form-control" placeholder="Search Pokemon" aria-label="Search by Pokemon Type" aria-describedby="basic-addon1">
-                </div>
-            </form>
-            <a
-                href="./full-pokeList.html"
-                aria-label="Click to navigate to Full Pokemon List"
-                >
-                <text class="mt-3" id="see-all">See All Pokemon</text>
-            </a>
+        <div class="pokemon-results mt-1 d-flex flex-column">
+            <!-- Dynamic Content -->
         </div>
-        <!-- Dynamic Modal -->
-        <div class="pokedex-container d-flex flex-row align-items-center">
-        </div>
-        <div class="icons pt-2 d-flex justify-content-center align-items-center">
+        <div class="icons pt-2 d-flex justify-content-between align-items-center">
             <div class="home-icon">
                 <a
                     href="../../../index.html"
                     aria-label="Click to navigate to the home page.">
                     <svg class="align-center" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
                         <path d="M20.3125 45.3125V34.3583C20.3125 33.5938 21.0938 32.8125 21.875 32.8125H28.125C28.9062 32.8125 29.6875 33.5938 29.6875 34.375V45.3125C29.6875 46.1754 30.3871 46.875 31.25 46.875H43.75C44.6129 46.875 45.3125 46.1754 45.3125 45.3125V23.4375C45.3125 23.0231 45.1479 22.6257 44.8549 22.3326L40.625 18.1028V7.8125C40.625 6.94956 39.9254 6.25 39.0625 6.25H35.9375C35.0746 6.25 34.375 6.94956 34.375 7.8125V11.8528L26.1049 3.58265C25.4947 2.97245 24.5053 2.97245 23.8951 3.58265L5.14515 22.3326C4.85212 22.6257 4.6875 23.0231 4.6875 23.4375V45.3125C4.6875 46.1754 5.38706 46.875 6.25 46.875H18.75C19.6129 46.875 20.3125 46.1754 20.3125 45.3125Z" fill="#424242"/>
+                    </svg>
+                </a>
+            </div>
+            <text id="see-more">See More Pokemon</text>
+            <div class="search-icon">
+                <a
+                    href="./search-pokemon.html"
+                    aria-label="Click to navigate to the All Pokemon page.">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                        <path d="M36.6942 32.3246C39.1654 28.9603 40.625 24.8069 40.625 20.3125C40.625 9.09421 31.5308 0 20.3125 0C9.09421 0 0 9.09421 0 20.3125C0 31.5308 9.09421 40.625 20.3125 40.625C24.8081 40.625 28.9625 39.1646 32.3273 36.6922L32.3246 36.6942C32.4168 36.8192 32.5195 36.9389 32.6326 37.052L44.6653 49.0847C45.8857 50.3051 47.8643 50.3051 49.0847 49.0847C50.3051 47.8643 50.3051 45.8857 49.0847 44.6653L37.052 32.6326C36.9389 32.5195 36.8192 32.4168 36.6942 32.3246ZM37.5 20.3125C37.5 29.8049 29.8049 37.5 20.3125 37.5C10.8201 37.5 3.125 29.8049 3.125 20.3125C3.125 10.8201 10.8201 3.125 20.3125 3.125C29.8049 3.125 37.5 10.8201 37.5 20.3125Z" fill="#424242"/>
+                        <path d="M0.714286 21.25C0.714286 20.3871 1.7936 19.6875 3.125 19.6875H36.875C38.2064 19.6875 39.2857 20.3871 39.2857 21.25C39.2857 22.1129 38.2064 22.8125 36.875 22.8125H3.125C1.7936 22.8125 0.714286 22.1129 0.714286 21.25Z" fill="#424242"/>
+                        <path d="M26.25 21.25C26.25 24.7018 23.4518 27.5 20 27.5C16.5482 27.5 13.75 24.7018 13.75 21.25C13.75 17.7982 16.5482 15 20 15C23.4518 15 26.25 17.7982 26.25 21.25Z" fill="#424242"/>
                     </svg>
                 </a>
             </div>
