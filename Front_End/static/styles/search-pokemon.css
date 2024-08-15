@@ -81,8 +81,9 @@ h1 {
 
 @media screen and (min-width: 1920px) {
     .current-type-icon {
-        left: 1015px;
-        top: -25px;
+        left: 1005px;
+        top: -50px;
+        width: 14rem;
     }
 }
 
@@ -121,7 +122,12 @@ a {
     color: inherit;
 }
 
-text:hover {
+a:hover {
+    color: var(--icon-color);
+    opacity: .9;
+}
+
+#see-all:hover {
     text-decoration: underline;
 }
 
@@ -129,6 +135,12 @@ text:hover {
 
 .form-inline {
     width: 19rem;
+}
+
+@media screen and (min-width: 1920px) {
+    .form-inline {
+        width: 25rem;
+    }
 }
 
 .input-group {
