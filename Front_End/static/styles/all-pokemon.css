@@ -117,10 +117,31 @@ text {
     font-family: poke-text;
 }
 
-text:hover {
+#see-more:hover {
     text-decoration: underline;
 }
 
 .modal-dialog-centered {
     justify-content: center;
+}
+
+.search-icon:hover, .home-icon:hover {
+    opacity: .8;
+}
+
+.rotate {
+    animation: none;
+}
+
+.rotate:hover {
+    animation: spin 3s linear;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
