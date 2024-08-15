@@ -138,6 +138,16 @@ text {
     justify-content: center;
 }
 
+.modal {
+    left: -23px;
+}
+
+@media screen and (min-width: 1920px) {
+    .modal {
+        left: 0;
+    }
+}
+
 a {
     text-decoration: none;
     color: inherit;
