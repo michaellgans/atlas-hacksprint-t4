@@ -134,7 +134,7 @@ text {
 }
 
 .rotate:hover {
-    animation: spin 3s linear;
+    animation: spin 3.5s linear;
 }
 
 @keyframes spin {

@@ -46,7 +46,7 @@ $(document).ready(function() {
                 <div class="pokemon-item d-flex flex-row align-items-center">
                     <img
                         id="pokeball-sprite"
-                        class="px-2"
+                        class="px-2 rotate"
                         src="../images/Bag_Poké_Ball_SV_Sprite.png"
                         alt="Open pokedex modal"
                         data-toggle="modal"

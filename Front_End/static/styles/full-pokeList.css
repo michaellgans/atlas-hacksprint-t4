@@ -142,3 +142,20 @@ a {
     text-decoration: none;
     color: inherit;
 }
+
+.rotate {
+    animation: none;
+}
+
+.rotate:hover {
+    animation: spin 3.5s linear;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
